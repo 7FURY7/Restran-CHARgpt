@@ -1,0 +1,355 @@
+/* Полностью переработанный адаптивный CSS для мобильных и десктопных устройств */
+
+/* Базовые стили */
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 0 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(bg.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.header-line {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: color 0.3s linear;
+}
+
+.nav-item:hover {
+    color: red;
+}
+
+.cart-img {
+    width: 24px;
+    height: 24px;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.phone-holder {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.num {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.num:hover {
+    color: red;
+}
+
+.phone-text {
+    font-size: 14px;
+}
+
+.button {
+    background-color: #FF7400;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: background-color 0.3s linear;
+}
+
+.button:hover {
+    background-color: greenyellow;
+}
+
+.header-down {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.header-title {
+    font-family: "Tinos", serif;
+    font-size: 36px;
+    color: #D67E35;
+    margin-bottom: 16px;
+}
+
+.header-subtitle {
+    font-size: 64px;
+    margin-bottom: 8px;
+}
+
+.header-suptitle {
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.bbtn {
+    background-color: #FF7400;
+    color: white;
+    padding: 10px 32px;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s linear;
+}
+
+.bbtn:hover {
+    background-color: greenyellow;
+}
+
+.coments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.coment1, .coment2, .coment3 {
+    box-shadow: 0 0 15px rgba(128, 128, 128, 0.5);
+    padding: 24px;
+    flex: 1 1 300px;
+    max-width: 350px;
+    text-align: center;
+    background: white;
+}
+
+.podnos {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 16px;
+}
+
+.s1, .s2, .s3 {
+    font-size: 24px;
+    font-family: "Tinos";
+    margin-bottom: 8px;
+}
+
+.s1 span, .s2 span, .s3 span {
+    color: #BC9060;
+}
+
+.ss1, .ss2, .ss3 {
+    font-size: 16px;
+    font-family: "Tinos";
+    color: #656363;
+}
+
+.history {
+    padding: 60px 16px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.header-hist {
+    font-size: 36px;
+    font-family: "Tinos";
+    margin-bottom: 16px;
+}
+
+.header-hist span {
+    color: #D67E35;
+}
+
+.hist {
+    font-size: 16px;
+    color: #656363;
+    font-family: "Open Sans";
+    line-height: 1.5;
+}
+
+.back {
+    background-image: url(back.png);
+    background-size: cover;
+    background-position: center;
+    padding: 60px 16px;
+    text-align: center;
+    color: white;
+}
+
+.txt {
+    font-size: 32px;
+    font-family: "Tinos";
+    margin-bottom: 16px;
+}
+
+.txt-down {
+    font-size: 18px;
+    font-family: "Open Sans";
+    margin-bottom: 24px;
+}
+
+.buy {
+    background-color: #FF7400;
+    color: white;
+    padding: 12px 24px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s linear;
+}
+
+.buy:hover {
+    background-color: greenyellow;
+}
+
+.menu {
+    padding: 60px 16px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.header-menu {
+    font-size: 36px;
+    font-family: "Tinos";
+    margin-bottom: 32px;
+}
+
+.header-menu span {
+    color: #D67E34;
+}
+
+.bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    background-image: url(bar.png);
+    background-size: cover;
+    background-position: center;
+    padding: 60px 16px;
+    color: black;
+}
+
+.mm1, .mm2, .mm3 {
+    background-color: white;
+    padding: 24px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.mg {
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+    margin-bottom: 16px;
+}
+
+.opis-header {
+    font-family: "Tinos";
+    font-size: 24px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.opis-osn {
+    font-size: 16px;
+    font-family: "Open Sans";
+    color: #656363;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.opis-btn {
+    background-color: #D67E34;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.opis-btn:hover {
+    background-color: greenyellow;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header-subtitle {
+        font-size: 48px;
+    }
+    .header-line {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav {
+        justify-content: center;
+    }
+    .coment1, .coment2, .coment3 {
+        max-width: 100%;
+    }
+    .bar, .back {
+        padding: 40px 16px;
+    }
+    .mg {
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 24px;
+    }
+    .header-subtitle {
+        font-size: 32px;
+    }
+    .txt {
+        font-size: 24px;
+    }
+    .txt-down {
+        font-size: 16px;
+    }
+    .container {
+        padding: 0 8px;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-line {
+        gap: 8px;
+    }
+}
